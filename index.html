@@ -8,7 +8,7 @@
 	<link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet">
 <style>
 #container{margin-top:10px;}
-#barbox{background-color:#dddddd;}
+#barbox{background-color:#ddd;}
 #bar{position:relative;}
 #fine_txt{width:70%;}
 #content{margin-top:8px;}
@@ -48,9 +48,9 @@
 				document.getElementById("activity_title").className="hide";
 			}
 		}
-//+1按钮处理	
-		var One = document.getElementById("one");	
-		One.onclick = plusone_click;	
+//+1按钮处理
+		var One = document.getElementById("one");
+		One.onclick = plusone_click;
 		function plusone_click(){
 				if(this.className == "normal"){
 					this.className = "click";
@@ -62,7 +62,7 @@
 						success:function(){
 							console.info("+1 success");		//+1操作成功控制台输出success
 						},
-						error:function(){	
+						error:function(){
 						console.info("+1 fail");		//+1操作功失败控制台输出fail
 						}
 					});
@@ -88,7 +88,7 @@
 		var Share = document.getElementById("share");
 		var Txt_share = document.getElementById("txt_share");
 		var Warning = document.getElementById("warning");
-		
+
 		Share.onclick = share_click;
 		function share_click(){
 			if(Txt_share.value !== ""){
@@ -100,10 +100,10 @@
 					success:function(){
 						console.info("share success");		//分享成功控制台输出share success
 					},
-					error:function(){	
+					error:function(){
 						console.info("share fail");		//分享失败控制台输出share fail
 					}
-				});				
+				});
 				$(document).ready(function(){
 						$("#modal-container").modal("hide");
 				});
@@ -112,8 +112,8 @@
 			else{
 				Warning.innerHTML="\n内容不能为空~~~";
 				Txt_share.focus();
-				return false;				
-			}	
+				return false;
+			}
 		}
 
 	};
@@ -209,7 +209,7 @@
 						</div>
 					</div>
 					<div id="content" class="row">
-							<div class="col-xs-12 col-md-12">							
+							<div class="col-xs-12 col-md-12">
 											<h4>
 												h4. 活动详情.
 											</h4>
@@ -225,7 +225,7 @@
 
 				</div>
 
-				<div class="col-xs-12 col-md-4">							
+				<div class="col-xs-12 col-md-4">
 							<h4>
 								h4. 其他信息.
 							</h4>
@@ -233,7 +233,7 @@
 								<em>Git</em>是一个分布式的版本控制系统，最初由<strong>Linus Torvalds</strong>编写，用作Linux内核代码的管理。在推出后，Git在其它项目中也取得了很大成功，尤其是在Ruby社区中。
 							</p>
 				</div>
-	</div>	
+	</div>
 </div>
 
 <!--******载入部分js jQuery文件********-->
